@@ -2,7 +2,9 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    >
 
     <Button
         android:id="@+id/spin_button"
@@ -10,7 +12,8 @@
         android:layout_height="wrap_content"
         android:padding="30dp"
         android:text="Spin to win"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="200dp"
+        android:backgroundTint="@color/blue"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -22,6 +25,7 @@
         android:padding="30dp"
         android:text="Fade in"
         android:layout_marginTop="40dp"
+        android:backgroundTint="@color/green"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/spin_button" />
@@ -33,6 +37,7 @@
         android:padding="30dp"
         android:text="Shake"
         android:layout_marginTop="40dp"
+        android:backgroundTint="@color/red"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/fade_button" />

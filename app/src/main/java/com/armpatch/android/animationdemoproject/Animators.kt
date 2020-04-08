@@ -4,6 +4,7 @@ import android.animation.Animator
 import android.animation.ObjectAnimator
 import android.animation.PropertyValuesHolder
 import android.view.View
+import android.view.animation.OvershootInterpolator
 
 fun getSpinAnimator(view: View): Animator {
     val spinAnimator = ObjectAnimator.ofFloat(view, View.ROTATION, 0f, 360f)
@@ -19,6 +20,7 @@ fun getFadeAnimator(view: View): Animator {
 
     val spinAnimator = ObjectAnimator.ofPropertyValuesHolder(view, scaleX, scaleY, alpha)
     spinAnimator.duration = 300
+    spinAnimator.interpolator = OvershootInterpolator()
 
     return spinAnimator
 }
